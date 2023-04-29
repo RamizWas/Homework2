@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:text="Hello my name is ramiz and I am a Birzeit student, studying Computer Science" />
+
+    <ImageView
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="0"
+        app:srcCompat="@drawable/screenshot_2023_04_28_140803" />
+
+    <TextView
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ramiz Wasaya" />
+
+    <EditText
+        android:id="@+id/writeHobbies"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Write Hobbies"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:onClick="AddHobby"
+        android:padding="5dp"
+        android:text="Add" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:id="@+id/hobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/Bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:text="@string/Bio" />
+
+
+</LinearLayout>
